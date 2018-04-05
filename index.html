@@ -1,61 +1,183 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Structure</title>
+	<link rel="stylesheet" href="assets/css/grid.css" />
+	<link rel="stylesheet" href="assets/css/main.css" />
 </head>
+
 <body>
 
 	<header>
 		<!-- header contents live here-->
-		<nav><!-- This is a wrapper around links -->
-			<ul>
-				<li>
-					<a href="index.html">
-						<img src = "uche.jpg" width="50px" /></a>
-				</li>
-				<li>
-					<ul>
-						<li>
-						<a href ="index.html">HOME</a>
-						</li>
-						<li>
-						<a href ="#">ABOUT</a>
-						orch.jpg</li>
-					</ul>
-				</li>
-			</ul>
-			
+		<nav class="nav">
+			<!-- This is a wrapper around links -->
+			<!-- container lives here -->
+			<div class="container">
+				<ul class="nav__list clearfix">
+					<li class="nav__left">
+						<a href="index.html" class="nav__link nav__brand">
+							<img src="assets/img/logo.jpeg"  />
+						</a>
+					</li>
+					<li class="nav__right">
+						<ul class="nav__list">
+							<li class="nav__active">
+								<a href="index.html" class="nav__link">HOME</a>
+							</li>
+							<li>
+								<a href="#" class="nav__link">ABOUT ME</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
 		</nav>
 	</header>
 
 	<main>
 		<!-- banner section -->
-		<section>
-			<div>
+		<section class="banner">
+			<div class="banner__details">
 				<h1>Portfolio</h1>
 			</div>
 		</section>
 
 		<!-- Projecet section-->
-		<section>
-			<!-- grid system at work here-->
-			<div>
-				<div>CARD1</div>
-				<div>CARD2</div>
-				<div>CARD3</div>
-				<div>CARD4</div>
-				<div>CARD5</div>
-				<div>CARD6</div>
+		<section class="project">
+			<div class="container container--lg-width">
+				<div class="section__heading">
+					<h3 class="section-heading__title">Projects</h3>
+				</div>
+				<!-- grid system at work here-->
+				<div class="grid">
+					<div class="col-3">
+						<div class="card">
+							<div class="card__body">
+								<div class="card__overlay">
+									<div class="card__overlay-details">
+										<div class="card__icons">&reg;</div>
+										<a href="#" class="card__links" target="_blank">Visit Project</a>
+									</div>
+								</div>
+								<img src="http://via.placeholder.com/300x150" />
+							</div>
+							<div class="card__footer">
+								<h6>Title</h6>
+								<small>Date</small>
+							</div>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card">
+							<div class="card__body">
+								<div class="card__overlay">
+									<div class="card__overlay-details">
+										<div class="card__icons">&delta;</div>
+										<a href="#" class="card__links" target="_blank">Visit Project</a>
+									</div>
+								</div>
+								<img src="http://via.placeholder.com/300x150" />
+							</div>
+							<div class="card__footer">
+								<h6>Title</h6>
+								<small>Date</small>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-3">
+						<div class="card">
+							<div class="card__body">
+								<div class="card__overlay">
+									<div class="card__overlay-details">
+										<div class="card__icons">&uArr;</div>
+										<a href="#" class="card__links" target="_blank">Visit Project</a>
+									</div>
+								</div>
+								<img src="http://via.placeholder.com/300x150" />
+							</div>
+							<div class="card__footer">
+								<h6>Title</h6>
+								<small>Date</small>
+							</div>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card">
+							<div class="card__body">
+								<div class="card__overlay">
+									<div class="card__overlay-details">
+										<div class="card__icons">&omega;</div>
+										<a href="#" class="card__links" target="_blank">Visit Project</a>
+									</div>
+								</div>
+								<img src="http://via.placeholder.com/300x150" />
+							</div>
+							<div class="card__footer">
+								<h6>Title</h6>
+								<small>Date</small>
+							</div>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card">
+							<div class="card__body">
+								<div class="card__overlay">
+									<div class="card__overlay-details">
+										<div class="card__icons">&Upsi;</div>
+										<a href="#" class="card__links" target="_blank">Visit Project</a>
+									</div>
+								</div>
+								<img src="http://via.placeholder.com/300x150" />
+							</div>
+							<div class="card__footer">
+								<h6>Title</h6>
+								<small>Date</small>
+							</div>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="card">
+							<div class="card__body">
+								<div class="card__overlay">
+									<div class="card__overlay-details">
+										<div class="card__icons">&phi;</div>
+										<a href="#" class="card__links" target="_blank">Visit Project</a>
+									</div>
+								</div>
+								<img src="http://via.placeholder.com/300x150" />
+							</div>
+							<div class="card__footer">
+								<h6>Title</h6>
+								<small>Date</small>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+				<!-- grid system ends here-->
 			</div>
-			<!-- grid system ends here-->
 		</section>
 
 		<!-- form section -->
-		<section>
-			<form>
-				<textarea></textarea>
-				<button>Submit</button>
-			</form>
+		<section class="job" id="job">
+			<div class="container container--lg-width">
+					<div class="section__heading">
+							<h3 class="section-heading__title">Available for jobs</h3>
+						</div>
+				<form class="job__form">
+					<div>
+						<textarea class="job__textarea"></textarea>
+					</div>
+					<br>
+					<button class="job__btn">Submit</button>
+				</form>
+			</div>
 		</section>
 
 		<!-- Cv section -->
@@ -64,26 +186,37 @@
 
 	</main>
 
-	<footer>
-		<div>
-			<ul>
-				<li>Copyright &copy; 2018</li>
-				<li>
-					<ul>
-						<li>Contact</li>
-						<li>
-							<ul>
-								<li><a href = "https://www.github.com/nukam20">github</a></li>
-								<li><a href ="#">Linkedin</a></li>
-								<li><a href = "anukamuchechukwu@gmail.com">Email</a></li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-			</ul>
+	<footer class="footer">
+		<div class="container container--lg-width">
+			<div class="footer__wrap">
+				<ul class="footer__list clearfix">
+					<li class="footer__left">Copyright &copy; 2018</li>
+					<li class="footer__right">
+						<ul class="footer__list">
+					
+							<li>
+								<ul class="footer__list">
+									<li>
+										<a href="https://www.github.com/nukam20" target="_blank"class="footer__links">Github</a>
+									</li>
+									<li>
+										<a href="#" class="footer__links" target="_blank">Linkedin</a>
+									</li>
+									<li>
+										<a href="#job" class="footer__links">Email</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
 
+
+
+			</div>
 		</div>
-	</footer> 
+	</footer>
 
 </body>
+
 </html>
